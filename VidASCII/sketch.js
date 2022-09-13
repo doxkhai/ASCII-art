@@ -1,26 +1,23 @@
 
-// const density = 'Ñ@W$9876543210?!oahkbdpqwunxrjft;:+=,._        '
-const density = '01 '
+// const density = '01 '
+const density = '@BWM01oahk(),.   '
+// const density = "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~i!lI;:,\" `'."
 
 let video
 let asciiDiv
 
-function vidLoad() {
-    video.loop();
-    video.volume(0);
-}
-
-function preload() {
-    // video = createVideo("clip.mov", vidLoad)
-}
-
 function setup() {
-    video = createCapture(VIDEO);
-    video.size(100, 50)
     noCanvas()
+    // video = createVideo("example_vid/hieumua.mov", vidLoad)
+    video = createCapture(VIDEO);
+    video.size(140, 180)
     asciiDiv = createDiv()
 }
 
+function vidLoad() {
+    video.loop();
+    video.volume(100);
+}
 
 function draw() {
     video.loadPixels()

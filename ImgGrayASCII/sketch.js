@@ -4,11 +4,11 @@ let img
 let video
 
 function preload() {
-    img = loadImage('boong.png')
+    img = loadImage('./img/IMG_0573.jpg')
 }
 
 function setup() {
-    createCanvas(400, 400);
+    createCanvas(450, 600);
 }
 
 function draw() {
